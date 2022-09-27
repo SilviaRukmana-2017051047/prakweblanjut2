@@ -26,6 +26,10 @@ class CreateMahasiswaTable extends Migration
             'alamat' => [
                 'type'       => 'TEXT',
             ],
+            'deskripsi' => [
+                'type'       => 'VARCHAR',
+                'constraint' => '255'
+            ],
             'created_at' => [
                 'type'       => 'DATETIME',
                 'null'       => 'true',
@@ -33,8 +37,8 @@ class CreateMahasiswaTable extends Migration
             'updated_at' => [
                 'type'       => 'DATETIME',
                 'null'       => 'true',
-            ],
-            
+            ]
+
         ]);
         $this->forge->addKey('id', true);
         $this->forge->createTable('mahasiswa');

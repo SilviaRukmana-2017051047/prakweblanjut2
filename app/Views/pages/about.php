@@ -1,1 +1,5 @@
-<h3>Silvia Rukmana 2017051047</h3>
+<?= $this->extend('templates/template'); ?>
+<?= $this->section('content'); ?>
+
+ini about
+<?= $this->endSection(); ?>
